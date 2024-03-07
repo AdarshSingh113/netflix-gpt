@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  //If i remove strict mode it will render once it only happens in dev mode in build mode it only happens one
   <React.StrictMode>
     <App />
   </React.StrictMode>
