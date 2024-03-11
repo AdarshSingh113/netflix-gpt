@@ -40,28 +40,24 @@ const Header = () => {
   }, [dispatch,navigate]);
 
   return (
-    <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
-      <img
-        className="w-24 cursor-pointer"
-       src={LOGO}
-        alt="Netflix Logo"
-      />
-      {user && (
-        <div className="flex items-center mx-4 px-4">
-          <img
-          className="w-10 h -10 mr-2"
+    <div className="bg-gradient-to-b from-black to-gray-900 text-white py-4 px-6 flex justify-between items-center ">
+    <img src={LOGO} alt="logo" className="h-10" />
+    {user && (
+      <div className="flex items-center">
+        <img
+          className="w-10 h-10 mr-2 "
           src={Profile}
           alt="Profile"
-          />
+        />
         <button
-          className="text-white hover:text-gray-400"
           onClick={handleSignOut}
+          className="bg-transparent hover:bg-gray-600 text-gray-300 hover:text-white py-2 px-4 border border-gray-600 hover:border-transparent rounded"
         >
           Sign Out
         </button>
       </div>
-      )}
-    </div>
+    )}
+  </div>
   );
 };
 
