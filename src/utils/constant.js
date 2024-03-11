@@ -11,6 +11,8 @@ export const Profile =
         "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiNjEzODJmZjEyNTE3NmJiMzA1MGMyZjIxNzQ5YTcxZCIsInN1YiI6IjY1ZTViZTI0OTk3OWQyMDE2M2IxNjM0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OZKoAxsP2VqFWadxBcApOfO3-OtZUmI3XjVJ8b69BU8",
     },
   };
+
+  export const Img_CDN = "https://image.tmdb.org/t/p/w400/";
   
 
   
