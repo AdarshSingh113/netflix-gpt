@@ -51,7 +51,7 @@ const MovieList = ({ title, movies }) => {
       <h1 className="text-lg md:text-3xl py-4 text-white">{title}</h1>
       <div className="relative">
         <div
-          className="flex overflow-hidden transition-transform duration-300 ease-in-out"
+          className="flex overflow-x-auto transition-transform duration-300 ease-in-out"
           ref={containerRef}
         >
           <div className="flex ">
