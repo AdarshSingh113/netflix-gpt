@@ -8,9 +8,9 @@ const MovieModal = ({ movieName, overview, closeModal }) => {
         }
       };
   return (
-    <div className="modal bg-white w-40 h-40 absolute">
+    <div className="modal bg-white w-40 h-80 absolute bg-transparent">
       <div className="modal-content">
-        <span className="close" onClick={handleCloseModal}>&times;</span>
+        <span  onClick={handleCloseModal}>&times;</span>
         <h2>{movieName}</h2>
         <p>{overview}</p>
       </div>
