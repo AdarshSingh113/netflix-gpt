@@ -68,12 +68,12 @@ const MovieList = ({ title, movies }) => {
         </div>
         <div>
           <button
-            className="bg-gray-300  absolute mt-20  top-0 left-0 bottom-0 px-2 py-1 rounded-full flex items-center h-16 w-16 
-      justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 "
+            className="bg-black  absolute mt-20  top-0 left-0 bottom-0 px-2 py-1 rounded-full flex items-center h-16 w-16 
+      justify-center opacity-0 transition-opacity  hover:opacity-100 "
             onClick={scrollLeft}
           >
             {" "}
-            <svg className="text-black w-16 h-16" viewBox="0 0 24 24">
+            <svg className="text-gray-300 w-16 h-16" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
@@ -81,11 +81,11 @@ const MovieList = ({ title, movies }) => {
             </svg>
           </button>
           <button
-            className="bg-gray-300 absolute mt-20 top-0 right-0 bottom-0  px-2 py-1 rounded-full flex items-center h-16 w-16
-        justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 "
+            className="bg-black absolute mt-20 top-0 right-0 bottom-0  px-2 py-1 rounded-full flex items-center h-16 w-16
+        justify-center opacity-0 transition-opacity  hover:opacity-100 "
             onClick={scrollRight}
           >
-            <svg className="text-black w-16 h-16" viewBox="0 0 24 24">
+            <svg className="text-gray-300 w-16 h-16" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 d="M10.59 16.59L12 18l6-6-6-6-1.41 1.41L14.17 12z"
