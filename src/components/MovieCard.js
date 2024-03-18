@@ -1,30 +1,39 @@
-import React, { useState } from 'react'
-import { Img_CDN } from '../utils/constant'
-import MovieModal from './MovieModal';
+import React, { useState } from "react";
+import { Img_CDN } from "../utils/constant";
 
-const MovieCard = ({posterPath,movieName,overview}) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+const MovieCard = ({ posterPath, movieName, overview }) => {
+  const [isHovered, setIsHovered] = useState(false);
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
+  return (
+    <>
+      <div
+        className="w-36 md:w-48 pr-4 relative"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        style={{
+          transition: "transform 0.3s",
+          transform: isHovered ? "scale(1.3)" : "scale(1)",
+        }}
+      >
+        <img alt="Movie Card" src={Img_CDN + posterPath} />
+        {isHovered && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black  text-white">
+           <div className="w-full h-full flex justify-center items-center">
+              <img
+                alt="Movie Card"
+                src={Img_CDN + posterPath}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            </div>
+        )}
+      </div>
+    </>
+  );
+};
 
-  return(
-  <>
-  <div className="w-36 md:w-48 pr-4">
-    <button onClick={toggleModal}>
-      <img alt='Movie Card' src={Img_CDN + posterPath} />
-      </button>
-    </div>
-  {isModalOpen && (
-    <MovieModal
-      movieName={movieName}
-      overview={overview}
-      closeModal={toggleModal}
-    />
-  )}
-</>
-);
-}
-
-export default MovieCard
+export default MovieCard;

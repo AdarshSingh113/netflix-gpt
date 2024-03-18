@@ -18,13 +18,13 @@ const useMovieTrailer = () => {
     );
     const trailer = filterData.length ? filterData[0] : json.results[0];
     dispatch(addTrailerVideo(trailer));
-    console.log(filterData);
-    console.log(trailer);
+    console.log("filterData",filterData);
+    console.log("trailer",trailer);
   };
 
   useEffect(() => {
     getMoviesData();
-  }, []);
+  }, [dispatch]);
 };
 
 export default useMovieTrailer;
