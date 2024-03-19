@@ -40,8 +40,8 @@ const Header = () => {
   }, [dispatch,navigate]);
 
   return (
-    <div className="absolute w-screen bg-gradient-to-b from-black to-gray-900 text-white py-4 px-6 z-10 flex justify-between items-center ">
-    <img src={LOGO} alt="logo" className="h-10" />
+    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+    <img src={LOGO} alt="logo" className="w-36 mx-auto md:mx-0" />
     {user && (
       <div className="flex items-center">
         <img

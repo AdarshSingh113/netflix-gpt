@@ -5,6 +5,7 @@ import {
 import Browse from "./Browse";
 import Login from "./Login";
 import { useDispatch } from "react-redux";
+import PlayMovie from "./PlayMovie";
 
 const Body = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,10 @@ const Body = () => {
     {
       path: "/browse",
       element: <Browse />,
+    },
+    {
+      path: "/moviePage",
+      element: <PlayMovie/>,
     },
   ]);
 

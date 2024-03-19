@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MovieModal = ({ movieName, overview, closeModal }) => {
+const MovieModal = ({ movieName, overview, closeModal}) => {
     console.log(movieName + overview)
     const handleCloseModal = (event) => {
         if (event.target === event.currentTarget) { // Check if click occurred on the modal overlay
